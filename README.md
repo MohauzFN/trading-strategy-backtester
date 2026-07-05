@@ -1,6 +1,3 @@
-# trading-strategy-backtester
-Python (libraries: yfinance, pandas, matplot)
-Notes explicity stating "FIX" are areas of AI use in debugging.
 # Algorithmic Trading Strategy Backtester
 
 A modular Python framework designed to backtest quantitative trading strategies using historical market data. This project allows users to evaluate the historical performance of algorithmic strategies before deploying capital in a practical environment.
@@ -21,3 +18,6 @@ The backtester processes historical daily closing prices. When the short-term mo
 ## How It Works (Example: Correlated Pairs Trading)
 
 ## How It Works (Example: Relative Strength Index)
+
+## Notes
+- The **'FIX'** tag identifies sections optimized or debugged using AI.
