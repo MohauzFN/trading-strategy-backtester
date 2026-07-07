@@ -15,8 +15,6 @@ A modular Python framework designed to backtest quantitative trading strategies 
 ## How It Works (Example: Moving Average Crossover)
 The backtester processes historical daily closing prices. When the short-term moving average crosses above the long-term moving average, a **Buy** signal is triggered. A **Sell** signal is triggered on the reverse cross.
 
-## How It Works (Example: Correlated Pairs Trading)
-
 ## How It Works (Example: Relative Strength Index)
 
 ## Notes
