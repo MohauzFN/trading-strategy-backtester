@@ -4,7 +4,8 @@ A modular Python framework designed to backtest quantitative trading strategies 
 
 ## Features & Roadmap
 - [x] **Moving Average Crossover:** Backtest SMA/EMA strategies with customizable short/long windows.
-- [x] **Relative Strength Index (RSI) Filter:** Incorporating momentum metrics to reduce false signals.
+- [x] **Relative Strength Index (RSI) Filter:**
+Incorporating momentum metrics to reduce false signals.
 
 
 ## Tech Stack
