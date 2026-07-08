@@ -16,6 +16,6 @@ Incorporating momentum metrics to reduce false signals.
 The backtester processes historical daily closing prices. When the short-term moving average crosses above the long-term moving average, a **Buy** signal is triggered. A **Sell** signal is triggered on the reverse cross.
 
 ## How It Works (Example: Relative Strength Index)
-The backtester processes historical daily closing prices. When the RSI surpasses the low relative strength index threshold, a **Buy** signal is triggered; a **Sell** signal is triggered when the RSI surpasses the high relative strength index threshold.
+The backtester processes historical daily closing prices. When the RSI surpasses the low relative strength index threshold, a **Buy** signal is triggered. A **Sell** signal is triggered when the RSI surpasses the high relative strength index threshold.
 ## Notes
 - The **'FIX'** tag identifies sections optimized or debugged using AI.
