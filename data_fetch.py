@@ -13,7 +13,7 @@ def fetch_and_save_data(ticker, start_date, end_date):
             df.columns = df.columns.get_level_values(0)
             
         # If the CSV is in an old broken format — delete it and re-download cleanly
-        if len(df) > 0 and df.iloc[0].astype(str).str.contains(ticker).any():
+        if len(df) > 0 and df.iloc[0].astype(str).str.contains(ticker, regex=False).any():
             print("Detected old broken CSV format. Re-downloading fresh data...")
             # FIX: delete the bad file so we don't load it again
             
