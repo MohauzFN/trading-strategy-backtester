@@ -8,10 +8,10 @@ def main():
     # Fetch data
     ticker = "NVDA"
     initial_capital = 10000.0
-    start_date = "2020-01-01"
-    today = str(date.today())
-    df = fetch_and_save_data(ticker, start_date, today)
-    sp500_df = fetch_and_save_data("^GSPC", start_date, today)
+    start_date = "2023-01-01"
+    end_date = str(date.today())
+    df = fetch_and_save_data(ticker, start_date, end_date)
+    sp500_df = fetch_and_save_data("^GSPC", start_date, end_date)
 
     # Apply strategy signals
     df_ma = moving_average_crossover(df)
@@ -50,7 +50,7 @@ def main():
     plt.plot(backtest_dates, performance_rsi.loc[backtest_dates, 'Portfolio_Value'], label="RSI Strategy", color="purple", linewidth=1.5)
     plt.plot(backtest_dates, buy_and_hold_ticker, label=f"Hold {ticker}", color="orange", linewidth="1.5")
     plt.plot(backtest_dates, buy_and_hold_sp500, label="S&P 500 Index", color="green", linewidth="1.5")
-    plt.title(f"Portfolio Growth Comparison ($10k Initial Capital Starting {backtest_dates[0].strftime('%Y-%m-%d')})")
+    plt.title(f"Portfolio Growth Comparison ($10k Initial Capital, Starting: {backtest_dates[0].strftime('%Y-%m-%d')} , Ending: {end_date})")
     plt.xlabel("Date")
     plt.ylabel("Portfolio Value ($)")
     plt.legend()
